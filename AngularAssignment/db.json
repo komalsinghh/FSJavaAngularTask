@@ -1,0 +1,15 @@
+{
+  "posts": [
+    {
+      "name": "Komal",
+      "roll": 93,
+      "dob": "2023-01-03",
+      "score": 98,
+      "id": 1
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

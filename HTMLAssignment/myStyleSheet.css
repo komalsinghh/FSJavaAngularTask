@@ -1,0 +1,113 @@
+#header{
+    background-color: #00CCAA;
+    padding: 5px;
+    color: white;
+    border: 1px solid #36544F;
+}
+#heading{
+    font-size: 30px;
+}
+footer{
+    background-color: #00CCAA;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    border: 1px solid #36544F;
+}
+.container{
+    margin-top: 40px;
+}
+#name{
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+#email{
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+#website{
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+#imagelink{
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+#male{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#female{
+    margin-left: -15px;
+    margin-bottom: 20px;
+}
+.my-custom-scrollbar {
+    position: relative;
+    height: 400px;
+    overflow: auto;
+}
+.table-wrapper-scroll-y {
+    display: block;
+}
+#vertical{
+    border-right: 3px solid #00CCAA;
+      height: 400px;
+      position: absolute;
+      left: 50%;
+      text-align: right;
+      /* margin:0 2px 0 5px; */
+}
+
+#message{
+    color: red;
+}
+.imagelinkd{
+    position:absolute;
+    width: 20.3%;
+    transform: translate(25%, 8%);
+}
+#newData{
+    border-color: #9ACD32;
+}
+#image{
+    width: 150px;
+}
+tr:nth-child(even){
+    background-color: lightgoldenrodyellow;
+    padding: 0 0 0 0;
+    font-size: 13px;
+}
+tr:nth-child(odd){
+    padding: 0 0 0 0;
+    font-size: 13px;
+}
+.animated {
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+

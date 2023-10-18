@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="myStyleSheet.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Student Enrollment Form</title>
+  </head>
+  <body>
+    <div class="jumbotron text-center" id="header">
+        <h1 id="heading">Student Enrollment Form</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <form id="clearForm" method="post">
+                    
+                    <div class="form-group row">
+                        <label for="name" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="name" title="Enter Name" placeholder="Enter Name"/>
+                          <span class="message"></span>
+                        </div>
+                      </div>
+                    <div class="form-group row">
+                      <label for="email" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" title="Enter Email ID" placeholder="Enter Email"/>
+                        <span class="message"></span>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="website" class="col-sm-2 col-form-label">Website</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="website" title="Enter Website URL" placeholder="https://www.xyz.com"/>
+                          
+                        </div>
+                      </div>
+                      <div class="form-group row mb-3">
+                        <label for="imagelink" class="col-form-label" >Image Link</label>
+                        <div class="col-sm-10 imagelinkd">
+                          <input class="form-control" id="imagelink" title="Enter Image URL" placeholder="Enter Image Link" style="width: 130%;"/>
+                          <span class="message"></span>
+                        </div>
+                      </div>
+                    <fieldset class="form-group">
+                      <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                        <div class="col-sm-10">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="Male" >
+                            <label class="form-check-label" for="male">
+                              Male
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                            <label class="form-check-label" for="female">
+                              Female
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <div class="form-group row">
+                        <label for="Skills" class="col-sm-3">
+                            Skills
+                        </label>
+                        <label class="form-check-label checkbox-inline col-sm-3">
+                            <input  class="form-check-input" type="checkbox" name="skillchoice" id="java" value="Java"> Java
+                        </label>
+                        <label class="form-check-label checkbox-inline col-sm-3">
+                            <input class="form-check-input" type="checkbox" name="skillchoice" id="html" value="HTML"> HTML
+                        </label>
+                        <label class="form-check-label checkbox-inline col-sm-3">
+                            <input class="form-check-input" type="checkbox" name="skillchoice" id="css" value="CSS"> CSS
+                        </label>
+                    </div>
+                  
+                      <div class="form-group row">
+                          <div class="col-xs-4">
+                              <button type="button" id="updateButton" style="margin-top: 35px;" class="btn btn-primary" onclick="studentUpdate()" title="Click to enroll student">
+                                  Enroll Student
+                              </button>
+                           <button type="reset" id="clearButton" style="margin: 35px 0 0 20px;" class="btn btn-danger" title="Click To clear all form fields">
+                                  Clear
+                              </button>
+                          </div>
+                      </div>
+                    <p id="errorMsg"><br> </p>
+                  </form>
+            </div>
+            <div class="col-sm-3 d-none d-sm-block">
+                <p id="vertical"></p>
+            </div>
+             <div class="col-sm-5">
+                <h3 id="displayTable" style="text-align:center; margin-bottom:20px;">Enrolled Students</h3>
+                <div class="table-wrapper-scroll-y my-custom-scrollbar ">
+                <table id="productTable" class="table table-bordered table-condensed table-stripped" style="border-width: 2px;" title="Enrolled Students">
+                    <thead id="OutputTable">
+                        <tr>
+                            <th id ="description" style="background-color: #9ACD32; color: white;">Description</th>
+                            <th id ="image" style="background-color: #9ACD32; color: white;">Image</th>
+                        </tr>
+                    </thead>
+                    <tbody id="body">
+
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <footer>
+            &copy;Copyright 2020-2021 by Fresher Training
+        </footer>
+    </div>
+    <script src="myScript.js"></script>
+  </body>
+</html>

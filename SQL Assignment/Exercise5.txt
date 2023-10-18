@@ -1,0 +1,23 @@
+/*Write a Procedure supplying name information from the Person.Person table and accepting a filter for the first name. Alter the above 
+Store Procedure to supply Default Values if user does not enter any value. ( Use AdventureWorks)*/
+
+CREATE PROC dbo.spNameInformation
+@FirstName nvarchar(50)
+as
+BEGIN
+SELECT FirstName, LastName FROM Person.Person 
+WHERE FirstName=@FirstName
+END
+
+EXEC dbo.spNameInformation 'Ken';
+
+
+ALTER PROC dbo.spNameInformation
+@FirstName nvarchar(50) = 'Kevin'
+AS
+BEGIN
+SELECT FirstName, LastName FROM Person.Person 
+WHERE FirstName=@FirstName
+END
+
+EXEC dbo.spNameInformation;

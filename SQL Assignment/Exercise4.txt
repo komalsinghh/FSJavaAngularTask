@@ -1,0 +1,16 @@
+/*
+Create a function that takes as inputs a SalesOrderID, a Currency Code, and a date, and returns a table of all the SalesOrderDetail rows 
+for that Sales Order including Quantity, ProductID, UnitPrice, and the unit price converted to the target currency based on the end of 
+day rate for the date provided. Exchange rates can be found in the Sales.CurrencyRate table. (Use AdventureWorks) */
+
+GO
+CREATE FUNCTION Sales.getProductDetails(@SalesOrderID int, @CurrencyCode nvarchar(3), @Date datetime)
+RETURNS TABLE 
+AS
+RETURN (SELECT SOD.ProductID, SOD.OrderQty AS 'Quantity', SOD.UnitPrice, 
+SOD.UnitPrice * CR.EndOfDayRate AS 'Target Currency'
+FROM Sales.SalesOrderDetail AS SOD, Sales.CurrencyRate AS CR
+WHERE @SalesOrderID=SOD.SalesOrderID AND @CurrencyCode=CR.ToCurrencyCode AND @Date=CR.ModifiedDate)
+
+GO
+SELECT * FROM Sales.getProductDetails(43659,'MXN','2008-05-05');

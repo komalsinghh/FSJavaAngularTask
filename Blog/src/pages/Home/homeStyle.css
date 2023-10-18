@@ -1,0 +1,26 @@
+.card{
+    max-width: 1150px;
+    
+}
+.name-design{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch;
+  }
+  .card-title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch;
+  }
+.img-fit{
+    width: 200px;
+    height:200px;
+    margin: 10px 0 5px 30px;
+    transition: 0.3s ease-in-out;
+}
+.img-fit:hover{
+    transition: 0.3s ease-in-out;
+    transform:scale(1.1);
+}

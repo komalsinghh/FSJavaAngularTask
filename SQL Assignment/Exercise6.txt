@@ -1,0 +1,21 @@
+/*
+Write a trigger for the Product table to ensure the list price can never be raised more than 15 Percent in a single change. Modify the 
+above trigger to execute its check code only if the ListPrice column is updated (Use AdventureWorks Database). */
+
+CREATE OR ALTER TRIGGER Production.trgLimitPriceChange
+ON Production.Product
+AFTER UPDATE
+AS
+BEGIN
+	SET NOCOUNT ON;
+	IF UPDATE(ListPrice)
+		BEGIN
+		UPDATE Production.Product 
+		SET ListPrice= IIF((I.ListPrice>D.ListPrice*1.15),D.ListPrice,I.ListPrice)
+		FROM inserted AS I JOIN deleted AS D
+		ON I.ProductID=D.ProductID
+		END
+END
+GO
+UPDATE Production.Product SET ListPrice=3000 WHERE ProductID=517;
+SELECT * FROM Production.Product WHERE ProductID=517;
