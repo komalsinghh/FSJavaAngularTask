@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NedAI.API", "NedAI.API\NedAI.API.csproj", "{7F585DE7-61BC-43A5-B926-EDCF7DDA95DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F585DE7-61BC-43A5-B926-EDCF7DDA95DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F585DE7-61BC-43A5-B926-EDCF7DDA95DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F585DE7-61BC-43A5-B926-EDCF7DDA95DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F585DE7-61BC-43A5-B926-EDCF7DDA95DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCF316D1-4404-436E-9DA0-39FB0F0492C8}
+	EndGlobalSection
+EndGlobal

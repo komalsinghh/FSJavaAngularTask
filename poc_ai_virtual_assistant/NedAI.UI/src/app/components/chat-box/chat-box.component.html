@@ -1,0 +1,18 @@
+<div class="chat-container">
+    <div class="chat-messages" #chatContainer>
+        <div class="message" *ngFor="let message of messages" [ngClass]="{'message-incoming': message.incoming, 'message-outgoing': !message.incoming}">
+            <div class="message-item message-container" [ngClass]="{'incoming': message.incoming, 'outgoing': !message.incoming}" >
+               <div class="message-content">{{ message.content }}</div>
+            </div>
+          </div>
+    </div>
+  
+    <div class="chat-input-container">
+      <mat-form-field class="input-field">
+        <input matInput [(ngModel)]="newMessage" placeholder="Type a message" (keydown.enter)="sendMessage()">
+        <mat-icon matSuffix class="suffix-cursor" (click)="sendMessage()">send</mat-icon>
+        <mat-icon matSuffix class="suffix-cursor mic-button" [class.active]="isListening" (click)="toggleListen()">mic</mat-icon>
+      </mat-form-field>
+    </div>
+  </div>
+  

@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <div class="menu">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button [routerLink]="'/chatbot'" mat-menu-item>
+        <mat-icon color="primary">smart_toy</mat-icon>Chatbot Assistant
+      </button>
+      <button [routerLink]="'/transaction'" mat-menu-item>
+        <mat-icon color="accent">payments</mat-icon>Transactions
+      </button>
+    </mat-menu>
+  </div>
+  <div class="pointer">
+    <span [routerLink]="'/chatbot'">Chatbot Assistant</span>
+    <span [routerLink]="'/transaction'" style="margin-left:20px ;">Transactions</span>
+   </div>
+  <span class="example-spacer"></span>
+    <mat-icon>{{headingIcon}}</mat-icon>
+    <span class="logo">{{headingName|  titlecase}}</span>
+</mat-toolbar>

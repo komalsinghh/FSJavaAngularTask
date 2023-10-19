@@ -1,0 +1,159 @@
+<div class="table-container">
+<<<<<<< HEAD
+<div>
+  <button mat-raised-button class="btn" color="accent" (click)="toggleCategoryColumn()">
+   {{showCategoryColumn?'Hide Category':'Categorize'}}
+  </button>
+  </div>
+<div>
+<button mat-raised-button class="btn" color="accent" (click)="toggleFraudulentColumn()">
+  {{showFraudAlertColumn?'Hide Fraud Alert':'Possible Fraudulent'}}
+</button>
+</div>
+<table mat-table [dataSource]="transactions" class="mat-elevation-z8 dataTable">
+    <!-- User ID Column -->
+    <ng-container matColumnDef="user_id">
+      <th mat-header-cell *matHeaderCellDef>User ID</th>
+      <td mat-cell *matCellDef="let transaction">{{ transaction.user_id }}</td>
+    </ng-container>
+  
+    <!-- Transaction ID Column -->
+    <ng-container matColumnDef="transaction_id">
+      <th mat-header-cell *matHeaderCellDef>Transaction ID</th>
+      <td mat-cell *matCellDef="let transaction">{{ transaction.transaction_id }}</td>
+    </ng-container>
+  
+=======
+  <mat-form-field class="btn">
+    <mat-select placeholder="Filter" [formControl]="transactions" multiple>
+      <mat-select-trigger>
+        {{ transactions.value ? transactions.value[0] : "" }}
+        <span
+          *ngIf="transactions.value?.length > 1"
+          class="additional-selection"
+        >
+          (+{{ transactions.value.length - 1 }} others)
+        </span>
+      </mat-select-trigger>
+      <mat-option
+        *ngFor="let transaction of transactionList"
+        [value]="transaction"
+        >{{ transaction }}</mat-option
+      >
+    </mat-select>
+  </mat-form-field>
+
+  <table mat-table [dataSource]="data" class="mat-elevation-z8 dataTable">
+    <!-- User ID Column -->
+    <ng-container matColumnDef="userId">
+      <th mat-header-cell *matHeaderCellDef>User ID</th>
+      <td mat-cell *matCellDef="let transaction">{{ transaction.userId }}</td>
+    </ng-container>
+
+    <!-- Transaction ID Column -->
+    <ng-container matColumnDef="transactionId">
+      <th mat-header-cell *matHeaderCellDef>Transaction ID</th>
+      <td mat-cell *matCellDef="let transaction">
+        {{ transaction.transactionId }}
+      </td>
+    </ng-container>
+
+>>>>>>> feature/initial_setup
+    <!-- Date Column -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef>Date</th>
+      <td mat-cell *matCellDef="let transaction">{{ transaction.date }}</td>
+    </ng-container>
+<<<<<<< HEAD
+  
+=======
+
+>>>>>>> feature/initial_setup
+    <!-- Amount Column -->
+    <ng-container matColumnDef="amount">
+      <th mat-header-cell *matHeaderCellDef>Amount</th>
+      <td mat-cell *matCellDef="let transaction">{{ transaction.amount }}</td>
+    </ng-container>
+<<<<<<< HEAD
+  
+    <!-- Description Column -->
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef>Description</th>
+      <td mat-cell *matCellDef="let transaction">{{ transaction.description }}</td>
+    </ng-container>
+  
+    <!-- Category Column -->
+    <ng-container matColumnDef="category">
+      <th mat-header-cell *matHeaderCellDef [style.display]="showCategoryColumn?'table-cell':'none'">Category</th>
+      <td mat-cell *matCellDef="let transaction" [style.display]="showCategoryColumn?'table-cell':'none'">
+       <mat-icon>{{getCategoryIcon(transaction.category)}}</mat-icon>
+        {{ transaction.category }}</td>
+    </ng-container>
+  
+    <!-- Fraud Alert Column -->
+    <ng-container matColumnDef="fraud_alert">
+      <th mat-header-cell *matHeaderCellDef [style.display]="showFraudAlertColumn?'table-cell':'none'">Fraud Alert</th>
+      <td mat-cell *matCellDef="let transaction" [style.display]="showFraudAlertColumn?'table-cell':'none'">
+        <span *ngIf="transaction.fraud_alert">⚠️ Possible Fraudulent</span>
+      <span *ngIf="!transaction.fraud_alert"> <span style="color: green;">✔</span> Secure</span></td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
+=======
+
+    <!-- Description Column -->
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef>Description</th>
+      <td mat-cell *matCellDef="let transaction">
+        {{ transaction.description }}
+      </td>
+    </ng-container>
+
+    <!-- Category Column -->
+    <ng-container matColumnDef="category">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        [style.display]="transactionData.categorize ? 'table-cell' : 'none'"
+      >
+        Category
+      </th>
+      <td
+        mat-cell
+        *matCellDef="let transaction"
+        [style.display]="transactionData.categorize ? 'table-cell' : 'none'"
+      >
+        <mat-icon>{{ getCategoryIcon(transaction.category) }}</mat-icon>
+        {{ transaction.category }}
+      </td>
+    </ng-container>
+
+    <!-- Fraud Alert Column -->
+    <ng-container matColumnDef="possibleFraudulent">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        [style.display]="transactionData.fraudDetection ? 'table-cell' : 'none'"
+      >
+        Fraud Alert
+      </th>
+      <td
+        mat-cell
+        *matCellDef="let transaction"
+        [style.display]="transactionData.fraudDetection ? 'table-cell' : 'none'"
+      >
+        <span *ngIf="transaction.fraudAlert">⚠️ Possible Fraudulent</span>
+        <span *ngIf="!transaction.fraudAlert">
+          <span style="color: green">✔</span> Secure</span
+        >
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>
+>>>>>>> feature/initial_setup

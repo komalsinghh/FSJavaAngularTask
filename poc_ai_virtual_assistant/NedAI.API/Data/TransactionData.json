@@ -1,0 +1,162 @@
+[
+  {
+    "TransactionId": 1,
+    "AccountNumber": 123456789,
+    "TransactionDate": "2023-07-31T00:00:00",
+    "TransactionType": "Deposit",
+    "Description": "Salary credit",
+    "Amount": 500.00
+  },
+  {
+    "TransactionId": 2,
+    "AccountNumber": 987654321,
+    "TransactionDate": "2023-07-30T00:00:00",
+    "TransactionType": "Withdrawal",
+    "Description": "ATM withdrawal",
+    "Amount": 100.00
+  },
+  {
+    "TransactionId": 3,
+    "AccountNumber": 123456789,
+    "TransactionDate": "2023-07-29T00:00:00",
+    "TransactionType": "Transfer",
+    "Description": "Transfer to friend",
+    "Amount": 250.00
+  },
+  {
+    "TransactionId": 4,
+    "AccountNumber": 555555555,
+    "TransactionDate": "2023-07-28T00:00:00",
+    "TransactionType": "Deposit",
+    "Description": "Bonus credit",
+    "Amount": 1000.00
+  },
+  {
+    "TransactionId": 5,
+    "AccountNumber": 987654321,
+    "TransactionDate": "2023-07-27T00:00:00",
+    "TransactionType": "Withdrawal",
+    "Description": "Grocery shopping",
+    "Amount": 50000.00
+  },
+  {
+    "TransactionId": 6,
+    "AccountNumber": 123456789,
+    "TransactionDate": "2023-07-26T00:00:00",
+    "TransactionType": "Deposit",
+    "Description": "Gift from family",
+    "Amount": 200.00
+  },
+  {
+    "TransactionId": 7,
+    "AccountNumber": 555555555,
+    "TransactionDate": "2023-07-25T00:00:00",
+    "TransactionType": "Transfer",
+    "Description": "Payment for services",
+    "Amount": 150.00
+  },
+  {
+    "TransactionId": 8,
+    "AccountNumber": 987654321,
+    "TransactionDate": "2023-07-24T00:00:00",
+    "TransactionType": "Withdrawal",
+    "Description": "Travel expenses",
+    "Amount": 300.00
+  },
+  {
+    "TransactionId": 9,
+    "AccountNumber": 123456789,
+    "TransactionDate": "2023-07-23T00:00:00",
+    "TransactionType": "Deposit",
+    "Description": "Refund from merchant",
+    "Amount": 350.00
+  },
+  {
+    "TransactionId": 10,
+    "AccountNumber": 555555555,
+    "TransactionDate": "2023-07-22T00:00:00",
+    "TransactionType": "Transfer",
+    "Description": "Gift to charity",
+    "Amount": 75.00
+  },
+  {
+    "TransactionId": 11,
+    "AccountNumber": 987654321,
+    "TransactionDate": "2023-07-21T00:00:00",
+    "TransactionType": "Withdrawal",
+    "Description": "Dinner with friends",
+    "Amount": 200.00
+  },
+  {
+    "TransactionId": 12,
+    "AccountNumber": 123456789,
+    "TransactionDate": "2023-07-20T00:00:00",
+    "TransactionType": "Deposit",
+    "Description": "Income from rental",
+    "Amount": 400.00
+  },
+  {
+    "TransactionId": 13,
+    "AccountNumber": 555555555,
+    "TransactionDate": "2023-07-19T00:00:00",
+    "TransactionType": "Transfer",
+    "Description": "Payment for goods",
+    "Amount": 125.00
+  },
+  {
+    "TransactionId": 14,
+    "AccountNumber": 987654321,
+    "TransactionDate": "2023-07-18T00:00:00",
+    "TransactionType": "Withdrawal",
+    "Description": "Shopping spree",
+    "Amount": 150.00
+  },
+  {
+    "TransactionId": 15,
+    "AccountNumber": 123456789,
+    "TransactionDate": "2023-07-17T00:00:00",
+    "TransactionType": "Deposit",
+    "Description": "Gift from colleague",
+    "Amount": 300.00
+  },
+  {
+    "TransactionId": 16,
+    "AccountNumber": 555555555,
+    "TransactionDate": "2023-07-16T00:00:00",
+    "TransactionType": "Transfer",
+    "Description": "Payment for bill",
+    "Amount": 100.00
+  },
+  {
+    "TransactionId": 17,
+    "AccountNumber": 987654321,
+    "TransactionDate": "2023-07-15T00:00:00",
+    "TransactionType": "Withdrawal",
+    "Description": "Movie tickets",
+    "Amount": 75.00
+  },
+  {
+    "TransactionId": 18,
+    "AccountNumber": 123456789,
+    "TransactionDate": "2023-07-14T00:00:00",
+    "TransactionType": "Deposit",
+    "Description": "Tax refund",
+    "Amount": 200.00
+  },
+  {
+    "TransactionId": 19,
+    "AccountNumber": 555555555,
+    "TransactionDate": "2023-07-13T00:00:00",
+    "TransactionType": "Transfer",
+    "Description": "Contribution to group activity",
+    "Amount": 50.00
+  },
+  {
+    "TransactionId": 20,
+    "AccountNumber": 987654321,
+    "TransactionDate": "2023-07-12T00:00:00",
+    "TransactionType": "Withdrawal",
+    "Description": "Home improvement",
+    "Amount": 400.00
+  }
+]

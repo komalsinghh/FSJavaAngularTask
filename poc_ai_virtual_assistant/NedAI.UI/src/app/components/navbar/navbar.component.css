@@ -1,0 +1,22 @@
+.heading{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logo{
+    margin-left: 15px;
+}
+
+.example-spacer{
+    flex:0.3 0.3 auto;
+}
+
+.pointer{
+    font-size:  14px;
+    color: rgb(248, 241, 233);
+}
+.pointer:hover{
+    cursor: pointer;
+}
+

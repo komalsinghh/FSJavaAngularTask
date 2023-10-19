@@ -1,0 +1,22 @@
+.dataTable{
+    margin: 10px auto;
+}
+
+.btn{
+    margin: 10px 10px 10px auto;
+    float: right;
+}
+
+.table-container {
+    height: 500px; 
+    overflow-y: auto;
+  }
+
+<<<<<<< HEAD
+=======
+.additional-selection {
+    opacity: 0.75;
+    font-size: 0.75em;
+  }
+>>>>>>> feature/initial_setup
+  
