@@ -1,0 +1,38 @@
+Project name		Internal POC - Virtual Assistant using Generative AI
+Duration		June 2023- August 2023
+Description		Project involved developing a chatbot using generative AI for the user of a bank application. This will work like virtual assistant of the user and will help them with their day-to-day queries including but not limited to account balance check, credit card due, last transactions, reset password etc. In this project we have also explored various aspects and use-cases like categorization of transactions and detecting fraudulent transactions. Going forward we are also exploring various capabilities of generative AI and developing solutions around the same.
+
+Technology Stack
+
+Responsibilities                                   		Angular, REST API, Postman
+
+•	Worked on developing the UI for the chatbot and worked on the core pieces of it.
+•	Responsible for analysis and understanding of generative AI to layout a working solution and use-cases.
+•	Worked on the integration of the Rest APIs with UI and rendering a presentable content back from API using CSS. 
+•	Worked on the integration of voice recognition feature and further processing the inputs.
+
+
+
+Project name		Product Catalog
+Duration		January 2023
+Description		Project involved providing a platform to enable user to view product details and search the product after successful authentication.
+Technology Stack
+
+Responsibilities                                   		Angular, REST API and Spring Boot.
+
+•	Designed UI and integrated services.
+•	Integration between Angular and Rest API for searching and displaying the results.
+•	Authentication and Logout functionality.
+		
+
+
+
+Project name		E-Notes
+Duration		Nov 2021- May 2022
+Description		Project involved providing a platform to enable user to add, update and delete notes. Users must register to use the application. 
+Technology Stack
+
+Responsibilities 		JSP, Servlet, JDBC, JavaScript.
+
+•	Designed UI and integrated services
+•	Authentication and Logout functionality.
